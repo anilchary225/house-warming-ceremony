@@ -132,52 +132,57 @@ const ThirdPage = () => {
       {/* ============================================
           YAGNAM IMAGE
       ============================================ */}
-      <img
-        ref={yagnamRef}
-        src="/images/yagnam2.webp"
-        alt=""
-        className="
-          absolute
-          right-1/200
-          md:right-1/9
-          lg:right-1/6
-          z-20
-          h-1/4
-          md:h-1/3
-          lg:h-1/2
-          w-auto
-          -translate-x-1/2
-          object-contain
-          bottom-[15%]
-        "
-      />
-
       {/* ============================================
-          SATYANARAYANA SWAMY IMAGE
-      ============================================ */}
-      <img
-        ref={swamyRef}
-        src="/images/satyanarayanswamy.webp"
-        alt=""
-        className="
-          absolute
-          left-1/4
-          md:left-1/4
-          lg:left-1/3
-          z-20
-          h-1/5
-          md:h-1/4
-          lg:h-1/3
-          w-auto
-          -translate-x-1/2
-          object-contain
-          bottom-[15%]
-          border-4
-          border-amber-400
-          p-1
-          rounded-full
-        "
-      />
+    SMALL IMAGES BELOW TEXT
+============================================ */}
+<div
+  ref={swamyRef}
+  className="
+    absolute
+    bottom-[5%]
+    left-1/2
+    -translate-x-1/2
+    z-20
+    flex
+    flex-row
+    items-end
+    justify-center
+    gap-6
+    md:gap-10
+    lg:gap-14
+  "
+>
+  {/* YAGNAM */}
+  <img
+    src="/images/yagnam2.webp"
+    alt=""
+    className="
+      h-44
+      md:h-62
+      lg:h-80
+      w-auto
+      object-contain
+    "
+  />
+
+  {/* SATYANARAYANA SWAMY */}
+  <img
+    src="/images/satyanarayanswamy.webp"
+    alt=""
+    className="
+      h-30
+      md:h-48
+      lg:h-66
+      w-auto
+      object-contain
+      border-2
+      md:border-3
+      border-amber-400
+      p-1
+      rounded-full
+    "
+  />
+</div>
 
       {/* ============================================
           CONTENT
