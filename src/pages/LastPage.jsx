@@ -222,7 +222,7 @@ const LastPage = () => {
       {/* Left Tree */}
       <img
         ref={leftTreeRef}
-        src="/images/bananatree.png"
+        src="/images/bananatree.webp"
         alt=""
         className="
           absolute
@@ -240,7 +240,7 @@ const LastPage = () => {
       {/* Right Tree */}
       <img
         ref={rightTreeRef}
-        src="/images/bananatree.png"
+        src="/images/bananatree.webp"
         alt=""
         className="
           absolute
@@ -261,7 +261,7 @@ const LastPage = () => {
       {/* Left Flowers */}
       <img
         ref={leftFlowersRef}
-        src="/images/flowers.png"
+        src="/images/flowers.webp"
         alt=""
         className="
           absolute
@@ -279,7 +279,7 @@ const LastPage = () => {
       {/* Right Flowers */}
       <img
         ref={rightFlowersRef}
-        src="/images/flowers.png"
+        src="/images/flowers.webp"
         alt=""
         className="
           absolute
@@ -300,7 +300,7 @@ const LastPage = () => {
       {/* Left Lotus */}
       <img
         ref={leftLotusRef}
-        src="/images/lotus.png"
+        src="/images/lotus.webp"
         alt=""
         className="
           absolute
@@ -318,7 +318,7 @@ const LastPage = () => {
       {/* Right Lotus */}
       <img
         ref={rightLotusRef}
-        src="/images/lotus.png"
+        src="/images/lotus.webp"
         alt=""
         className="
           absolute
@@ -337,7 +337,7 @@ const LastPage = () => {
 
       <img
         ref={cowRef}
-        src="/images/welcome.png"
+        src="/images/welcome.webp"
         alt=""
         className="
           absolute

@@ -155,7 +155,7 @@ const FirstPage = () => {
         {/* RIGHT THOMB */}
         <img
           ref={rightThombRef}
-          src="/images/thomb.png"
+          src="/images/thomb.webp"
           alt=""
           className="absolute -right-20 z-21 h-full min-h-screen object-cover md:-right-30 lg:right-0"
         />
@@ -163,7 +163,7 @@ const FirstPage = () => {
         {/* LEFT THOMB */}
         <img
           ref={leftThombRef}
-          src="/images/thomb.png"
+          src="/images/thomb.webp"
           alt=""
           className="absolute -left-20 z-21 h-full min-h-screen scale-x-[-1] object-cover md:-left-30 lg:left-0"
         />
@@ -171,7 +171,7 @@ const FirstPage = () => {
         {/* THORANAM */}
         <img
           ref={thoranamRef}
-          src="/images/thoranam.png"
+          src="/images/thoranam.webp"
           alt=""
           className="absolute top-0 z-20 w-full object-cover"
         />
@@ -179,7 +179,7 @@ const FirstPage = () => {
         {/* GANESH */}
         <img
           ref={ganeshRef}
-          src="/images/ganesh.png"
+          src="/images/ganesh.webp"
           alt=""
           className="absolute left-1/2 top-50 z-20 w-40 -translate-x-1/2 object-contain md:top-50 md:w-72 lg:top-40"
         />

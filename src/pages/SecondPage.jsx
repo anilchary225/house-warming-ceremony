@@ -123,7 +123,7 @@ const SecondPage = () => {
       ============================================ */}
       <img
         ref={gopuramRef}
-        src="/images/gopuram.png"
+        src="/images/gopuram.webp"
         alt=""
         className="
           absolute
@@ -149,7 +149,7 @@ const SecondPage = () => {
       ============================================ */}
       <img
         ref={smokeRef}
-        src="/images/smoke1.png"
+        src="/images/smoke1.webp"
         alt=""
         className="
           absolute
@@ -168,7 +168,7 @@ const SecondPage = () => {
       ============================================ */}
       <img
         ref={rightTreeRef}
-        src="/images/bananatree2.png"
+        src="/images/bananatree2.webp"
         alt=""
         className="
           absolute
@@ -191,7 +191,7 @@ const SecondPage = () => {
       ============================================ */}
       <img
         ref={leftTreeRef}
-        src="/images/bananatree2.png"
+        src="/images/bananatree2.webp"
         alt=""
         className="
           absolute

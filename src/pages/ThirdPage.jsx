@@ -134,7 +134,7 @@ const ThirdPage = () => {
       ============================================ */}
       <img
         ref={yagnamRef}
-        src="/images/yagnam2.png"
+        src="/images/yagnam2.webp"
         alt=""
         className="
           absolute
@@ -157,7 +157,7 @@ const ThirdPage = () => {
       ============================================ */}
       <img
         ref={swamyRef}
-        src="/images/satyanarayanswamy.png"
+        src="/images/satyanarayanswamy.webp"
         alt=""
         className="
           absolute
