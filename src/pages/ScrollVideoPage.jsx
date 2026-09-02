@@ -173,7 +173,7 @@ const ScrollVideoPage = () => {
               Scroll
             </span>
 
-            <div className="h-10 w-px bg-white/40 md:h-12" />
+            <div className="h-2 w-px bg-white/40 md:h-3" />
 
           </div>
         </div>

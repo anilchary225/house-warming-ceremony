@@ -7,12 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 const ThirdPage = () => {
   const sectionRef = useRef(null);
   const backgroundRef = useRef(null);
-  const overlayRef = useRef(null);
+
+  const yagnamRef = useRef(null);
+  const swamyRef = useRef(null);
+
   const textRef = useRef(null);
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-
       // ============================================
       // BACKGROUND TRANSITION
       // ============================================
@@ -36,19 +38,46 @@ const ThirdPage = () => {
       );
 
       // ============================================
-      // OVERLAY ANIMATION
-      // Moves from bottom to top on scroll
+      // YAGNAM IMAGE ANIMATION
+      // Bottom → Top
       // ============================================
       gsap.fromTo(
-        overlayRef.current,
+        yagnamRef.current,
         {
           y: "100%",
           opacity: 0,
+          scale: 0.9,
         },
         {
           y: "0%",
           opacity: 1,
-          ease: "none",
+          scale: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top bottom",
+            end: "top top",
+            scrub: 1,
+          },
+        }
+      );
+
+      // ============================================
+      // SATYANARAYANA SWAMY IMAGE ANIMATION
+      // Bottom → Top
+      // ============================================
+      gsap.fromTo(
+        swamyRef.current,
+        {
+          y: "100%",
+          opacity: 0,
+          scale: 0.9,
+        },
+        {
+          y: "0%",
+          opacity: 1,
+          scale: 1,
+          ease: "power2.out",
           scrollTrigger: {
             trigger: sectionRef.current,
             start: "top bottom",
@@ -80,7 +109,6 @@ const ThirdPage = () => {
           },
         }
       );
-
     }, sectionRef);
 
     return () => ctx.revert();
@@ -91,7 +119,6 @@ const ThirdPage = () => {
       ref={sectionRef}
       className="relative h-screen w-full overflow-hidden"
     >
-
       {/* ============================================
           BACKGROUND
       ============================================ */}
@@ -103,11 +130,10 @@ const ThirdPage = () => {
       />
 
       {/* ============================================
-          OVERLAY
-          Change this image to your Third Page PNG
+          YAGNAM IMAGE
       ============================================ */}
       <img
-        ref={overlayRef}
+        ref={yagnamRef}
         src="/images/yagnam2.png"
         alt=""
         className="
@@ -122,12 +148,15 @@ const ThirdPage = () => {
           w-auto
           -translate-x-1/2
           object-contain
-
           bottom-[15%]
         "
       />
+
+      {/* ============================================
+          SATYANARAYANA SWAMY IMAGE
+      ============================================ */}
       <img
-        ref={overlayRef}
+        ref={swamyRef}
         src="/images/satyanarayanswamy.png"
         alt=""
         className="
@@ -142,9 +171,11 @@ const ThirdPage = () => {
           w-auto
           -translate-x-1/2
           object-contain
-
           bottom-[15%]
-          border-4 border-amber-400 p-1 rounded-full
+          border-4
+          border-amber-400
+          p-1
+          rounded-full
         "
       />
 
@@ -155,7 +186,7 @@ const ThirdPage = () => {
         ref={textRef}
         className="
           relative
-          z-19
+          z-30
           flex
           h-full
           w-full
@@ -166,13 +197,17 @@ const ThirdPage = () => {
           p-10
         "
       >
-        <h1 className="font-one text-xl  text-[#563906]  md:text-4xl">
-
-        శ్రీ సత్యనారాయణ స్వామి వారి అనుగ్రహంతో మా ఇంట్లో ఉదయం 4:30 గం.లకు పూజా కార్యక్రమం మరియు ఉదయం 10:00 గం.లకు శ్రీ సత్యనారాయణ స్వామి వ్రతం నిర్వహించుచున్నాము. <br /> <br />
-        ఈ పవిత్ర కార్యక్రమానికి మీరు మీ కుటుంబ సమేతంగా విచ్చేసి, స్వామివారి వ్రతంలో పాల్గొని తీర్థ ప్రసాదాలు స్వీకరించి మమ్మల్ని ఆశీర్వదించవలసిందిగా సాదరంగా ఆహ్వానిస్తున్నాము.
+        <h1 className="font-one text-xl text-[#563906] md:text-4xl">
+          శ్రీ సత్యనారాయణ స్వామి వారి అనుగ్రహంతో మా ఇంట్లో ఉదయం 4:30 గం.లకు
+          పూజా కార్యక్రమం మరియు ఉదయం 10:00 గం.లకు శ్రీ సత్యనారాయణ స్వామి వ్రతం
+          నిర్వహించుచున్నాము.
+          <br />
+          <br />
+          ఈ పవిత్ర కార్యక్రమానికి మీరు మీ కుటుంబ సమేతంగా విచ్చేసి, స్వామివారి
+          వ్రతంలో పాల్గొని తీర్థ ప్రసాదాలు స్వీకరించి మమ్మల్ని ఆశీర్వదించవలసిందిగా
+          సాదరంగా ఆహ్వానిస్తున్నాము.
         </h1>
       </div>
-
     </section>
   );
 };
